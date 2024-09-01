@@ -1,0 +1,233 @@
+/* Base styles */
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+ margin: 12px 0px;
+ padding: 12px 0px;
+}
+
+.item-container {
+  background-color: var(--background);
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.main-item .item-img-top {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.item-title {
+  text-transform: capitalize;
+}
+.item-text-des {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.item-text-price {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.item-text-price sup {
+  color: green;
+}
+.product-price sup {
+  color: green;
+}
+/* <===========buttons==============> */
+.btn-filter {
+  border: none;
+  background-color: transparent;
+  margin-top: 15px;
+  width: 15%;
+  border: 1px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: var(--redcol);
+  color: var(--background);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.btn-show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 30%;
+  border: 1px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--text);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 350;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.btn-add-to-cart {
+  border: none;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--text);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 350;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn-more {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary);
+  color: var(--text);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 350;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+/* <===========button hover==============> */
+.btn-filter:hover {
+  background-color: var(--bluecol);
+  color: var(--text);
+}
+.btn-add-to-cart-product:hover,
+.btn-show-more:hover,
+.btn-more:hover,
+.btn-add-to-cart:hover {
+  color: var(--background);
+  background-color: var(--accent);
+}
+
+@media screen and (max-width: 900px) {
+  .item-container {
+    background-color: var(--background);
+    width: 40%;  
+    margin: 0.5rem;  
+    padding: 0.8rem;  
+    border-radius: 0.5rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  .main-item .item-img-top {
+    width: 100%;  
+    display: block;
+    margin: 0 auto;
+  }
+
+  .item-title {
+    text-transform: capitalize;
+    font-size: 0.9rem;  
+  }
+  .item-text-des {
+    margin: 0.5rem 0;
+    font-size: 0.5rem;  
+    font-weight: 300;  
+  }
+  .item-text-price {
+    text-align: center;
+    font-size: 1rem;  
+    margin-bottom: 0.5rem;  
+  }
+  .btn-add-to-cart {
+    border: none;
+    background-color: transparent;
+    margin: 0 auto;
+    width: 90%;
+    border: 1px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: var(--text);
+    border-radius: 2rem;
+    font-size: 0.6rem;
+    font-weight: 350;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+  .btn-more {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+    width: 90%;
+    border: 1px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary);
+    color: var(--text);
+    border-radius: 2rem;
+    font-size: 0.6rem;
+    font-weight: 350;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .btn-filter {
+    border: none;
+    background-color: transparent;
+    margin-top: 15px;
+    width: 50%;
+    border: 1px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: var(--redcol);
+    color: var(--background);
+    border-radius: 2rem;
+    font-size: 0.6rem;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .btn-show-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    margin: 0 auto;
+    width: 75%;
+    border: 1px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: var(--text);
+    border-radius: 2rem;
+    font-size: 0.6rem;
+    font-weight: 350;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+}
+

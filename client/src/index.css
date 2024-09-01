@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* <================================================CSS VARIABLES================================================> */
+:root {
+  --text: #10100D;
+  --background: #FCFCFB;
+  --primary: #C0B97D;
+  --secondary: #CDC9A3;
+  --accent: #A39D6A;
+  --redcol: #ef233c;
+  --bluecol: #90e0ef;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.button-primary {
+  background-color: var(--primary);
+  color: var(--background); /* This ensures the text on the button is readable */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+  background-color: var(--accent);
+}
+
+.button-secondary {
+  background-color: var(--secondary);
+  color: var(--background);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info-card {
+  background-color: var(--secondary);
+  color: var(--text);
+  padding: 20px;
+  border-radius: 8px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Desktop container utility class: */
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* <============================PageNotFound============================> */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  color: var(--primary);
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  color: var(--accent);
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: var(--text);
+  background-color: var(--primary);
+  border: 1px solid var(--accent);
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* <==================================ContactPage==================================> */
+.contactus-container {
+  text-align: center; /* Center align the content */
+  padding: 20px;
+}
+
+.contactus-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contactus-info {
+  max-width: 800px; /* Adjust based on preference */
+  margin: 20px auto; /* Center the text block with automatic margins */
+  text-align: left; /* Align the text to the left for the contact info */
+}
+
+/* Adjusting icons and text spacing for better alignment and readability */
+.contactus-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds a gap between icon and text */
+  justify-content: start; /* Aligns content to the start */
+}
+
+/* Adjusting the size of the icons for better visibility */
+.contactus-info svg {
+  width: 24px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .contactus-info {
+    max-width: 100%;
+    padding: 0 20px; /* Adds padding on smaller screens for better readability */
+  }
+}
+
+/* <==================================AboutPage==================================> */
+.aboutus-container {
+  text-align: center; /* Center align the image */
+  padding: 20px;
+}
+
+.aboutus-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.aboutus-info {
+  max-width: 800px; /* Adjust based on preference */
+  margin: 20px auto; /* Center the text block with automatic margins */
+  text-align: left; /* Align the text to the left */
+}
+
+@media (max-width: 768px) {
+  .aboutus-info {
+    max-width: 100%;
+  }
+}
+
+
+/* <==================================ServicetPage==================================> */
+.service-page-container {
+  max-width: 850px; /* Adjust based on preference */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+}
+
+.service-page-container h1 {
+  text-align: center; /* Center align the heading */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.service-page-container p {
+  text-align: center; /* Center align the paragraph */
+  margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+.brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.brand-card {
+  width: calc(25% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.brand-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+}
+
+.brand-info h2 {
+  font-size: 1rem;
+  color: #333;
+  padding: 10px;
+}
+
+/* Adjust for tablets to two columns */
+@media (max-width: 768px) {
+  .brand-card {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Adjust for very small screens to single column if necessary, or adjust as needed for two columns */
+@media (max-width: 480px) {
+  .brand-card {
+    width: calc(50% - 10px);
+  }
+}
+
+/* <==================================PolicyPage==================================> */
+
+.policy-page-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.policy-image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Adds spacing between the image and the title */
+  border-radius: 8px; /* Optional: if you want rounded corners */
+}
+
+.policy-content {
+  max-width: 800px;
+  margin: 0 auto; /* Center align the content */
+  text-align: left; /* Align text to the left inside the centered container */
+}
+
+.policy-content h2 {
+  margin-top: 20px;
+}
+
+.policy-content p {
+  margin-top: 10px;
+  line-height: 1.6; /* Improves readability */
+}
+
+.policy-content a {
+  color: #007bff; /* Example link color, adjust as needed */
+  text-decoration: none; /* Optional: Removes underline from links */
+}
+
+@media (max-width: 768px) {
+  .policy-content {
+    padding: 0 10px; /* Adds some padding on smaller screens */
+  }
+}
+
+
+/* <==================================Product LInk==================================> */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}

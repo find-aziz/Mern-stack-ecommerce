@@ -1,0 +1,80 @@
+.cat-container {
+  padding: 20px;
+}
+
+.cat-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the columns in the row */
+}
+
+.cat-col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex; /* Use flexbox for better control of child alignment */
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically if necessary */
+  padding: 10px;
+}
+
+.cat-btn-primary {
+  background-color: var(--secondary);
+  color: var(--text);
+  border: 2px solid var(--primary);
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 35px;
+  display: flex; /* Flex display to help with centering text and SVG */
+  justify-content: center; /* Center contents */
+  align-items: center; /* Align items for SVG and text */
+  width: 500px; /* Fixed width for consistency */
+  height: 120px; /* Fixed height for consistency */
+  text-transform: uppercase;
+}
+.cat-btn-primary svg {
+  fill: var(--text);
+  margin-top: 3px;
+  margin-left: 8px;
+  width: 45px;
+  height: 45px;
+}
+
+.cat-btn-primary:hover {
+  background-color: var(--primary);
+  border: none;
+  color: var(--background);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  svg {
+    fill: var(--background);
+  }
+}
+
+@media (max-width: 768px) {
+  .cat-col-md-6 {
+    flex: 0 0 50%; /* Each takes half the width of the container */
+    max-width: 50%; /* Ensures the column does not exceed half of the container's width */
+    padding: 10px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Centers children (the buttons) horizontally */
+    align-items: center; /* Centers children vertically for when there's extra vertical space */
+  }
+
+  .cat-btn-primary {
+    width: 100%; /* Make the button expand to fill the flex container */
+    max-width: 250px; /* Optional: limit button width for aesthetic purposes */
+    font-size: 14px;
+    width: 160px;
+    height: 80px;
+    display: block; /* Ensure the button is a block-level element for width control */
+    text-transform: none;
+  }
+  .cat-btn-primary svg {
+    width: 35px;
+    height: 35px;
+  }
+}

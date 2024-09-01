@@ -1,0 +1,28 @@
+.container-fluid {
+    margin: 12px 0px;
+    padding: 12px 0px;
+   }
+   
+   .item-container-admin {
+     background-color: var(--background);
+     width: 14rem;
+     margin: 0.3rem;
+     padding: 0.3rem;
+     border-radius: 1rem;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+   }
+   .main-item-admin .item-img-top-admin {
+     width: 150px;
+     display: block;
+     margin: 0 auto;
+   }
+   
+   .item-title-admin {
+     text-transform: capitalize;
+     font-size: 0.8rem;
+   }
+   .item-text-des-admin {
+     margin: 0.5rem 0;
+     font-size: 0.6rem;
+     font-weight: 200;
+   }

@@ -1,0 +1,98 @@
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem; /* Adjust margin for spacing */
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  height: 50px;
+  padding: 0 20px;
+  /* margin-right: 5px; */
+  font-size: 16px;
+  border-radius: 50px;
+  border: 2px solid var(--primary);
+  outline: none;
+  width: 680px; /* Set the width as needed */
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+}
+
+.search-button {
+  height: 50px;
+  padding: 0 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: var(--accent);
+}
+
+/* For tablets and below (Example: less than 1280px) */
+@media (max-width: 1080px) {
+  .search-input {
+    width: 80%; /* Adjust the width to 80% of its container */
+    margin-right: 20px; /* Slightly reduce margin */
+  }
+}
+/* For tablets and below (Example: less than 1024px) */
+@media (max-width: 1024px) {
+  .search-input {
+    width: 80%; /* Adjust the width to 80% of its container */
+    margin-right: 20px; /* Slightly reduce margin */
+  }
+}
+
+/* For mobile devices (Example: less than 768px) */
+@media (max-width: 768px) {
+  .search-input {
+    width: 75%; /* Adjust for smaller screens */
+    padding: 0 15px; /* Optionally reduce padding */
+    margin-right: 15px; /* Adjust margin */
+  }
+
+  .search-button {
+    width: 60px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    margin-right: 20px; 
+  }
+  .search-container,
+  .search-form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; 
+  }
+
+  .search-input{
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+  .search-button {
+    width: 60px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+}

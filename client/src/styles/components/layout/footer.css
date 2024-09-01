@@ -1,0 +1,65 @@
+/* <================================================Footer================================================> */
+.footer {
+  background-color: var(--primary);
+  padding: 20px 0;
+  color: var(--text); /* Ensuring footer text uses the global text color */
+}
+
+.footer h5 {
+  margin-bottom: 10px;
+  color: var(--text); /* Use the text color for consistency */
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: var(--text); /* Initial state using the text color for icons */
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: var(--background); /* Hover state uses the primary color for icons */
+}
+
+.footer p {
+  margin-top: 10px;
+  color: var(--text); /* Ensuring consistent text color */
+}
+
+.footer p a {
+  text-decoration: none;
+  color: var(--text); /* Links use the global text color */
+}
+
+.footer p a:hover {
+  color: var(--background); /* Hover state for links uses the primary color */
+}
+
+.footer-logo img {
+  max-width: 100px; /* Adjust based on your logo's size */
+  margin-bottom: 20px; /* Space between logo and copyright notice */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-logo,
+  .social-icons,
+  .footer p {
+    text-align: center; /* Center content for smaller devices */
+  }
+
+  .social-icons a {
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .footer h5,
+  .footer p {
+    font-size: 13px; /* Adjust font size for better readability on small devices */
+  }
+
+  .footer h5,
+  .footer p {
+    white-space: nowrap; /* Prevent text wrapping for smaller devices */
+  }
+}
